@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>赛车游戏</title>
+	<link rel="stylesheet" type="text/css" href="js/libs/layer/need/layer.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="wrapper-scene">
+			<!-- 太阳光 -->
+			<div class="sunlight">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!-- 白云 -->
+			<div class="clouds">
+			  <div class="cloud x1"></div>
+			  <!-- <div class="cloud x2"></div> -->
+			  <div class="cloud x3"></div>
+			  <div class="cloud x4"></div>
+			</div> 
+
+			<!-- 山峰 -->
+			<div class="peak-box">
+				<div class="peak-1">
+					<div class="peak-1-1"></div>
+				</div>
+				<div class="peak-2">
+					<div class="peak-2-1"></div>
+				</div>
+				<div class="peak-3">
+					<div class="peak-3-1"></div>
+				</div>
+				<div class="peak-4">
+					<div class="peak-4-1"></div>
+				</div>
+				<div class="peak-5">
+					<div class="peak-5-1"></div>
+				</div>
+				<div class="peak-6">
+					<div class="peak-6-1"></div>
+				</div>
+				<div class="peak-7">
+					<div class="peak-7-1"></div>
+				</div>
+				<div class="peak-8">
+					<div class="peak-8-1"></div>
+				</div>
+				<div class="peak-9">
+					<div class="peak-9-1"></div>
+				</div>
+				<div class="peak-10">
+					<div class="peak-10-1"></div>
+				</div>
+			</div>
+			<!-- 山坡 -->
+			<div class="hill">
+				<div class="hill-1"></div>
+				<div class="hill-2"></div>
+				<div class="hill-3"></div>
+				<div class="hill-4"></div>
+			</div>
+			<!-- 房子 -->
+			<div class="house-box">
+				<div class="house-1">
+					<div class="house-1__door"></div>
+					<div class="house-1__window1">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="house-1__window2 window2-1">
+						<span></span>
+						<span></span>
+						<span class="bg_bright"></span>
+						<span></span>
+						<span class="bg_bright"></span>
+						<span></span>
+					</div>
+					<div class="house-1__window3">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="house-1__window2 window2-2">
+						<span></span>
+						<span class="bg_bright"></span>
+						<span></span>
+						<span class="bg_bright"></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="house-1__window2 window2-3">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="bg_bright"></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="house-2">
+					<div class="house-2__door"></div>
+					<div class="house-2__window1">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="house-2__window1 window1-2">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="house-2__window1 window1-3">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="house-2__needle"></div>
+				</div>
+				<div class="house-3">
+					<div class="house-3__bottom">
+						<div class="house-3__window">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="house-3__middle">
+						<div class="house-3__window">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="house-3__top">
+						<div class="house-3__window">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="house-4">
+					<div class="house-4__window">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="house-5">
+					<div class="house-5__bottom">
+						<div class="house-5__door"></div>
+						<div class="house-5__window1 window1-1">
+							<span></span>
+							<span></span>
+						</div>
+						<div class="house-5__window1 window1-2">
+							<span></span>
+							<span></span>
+						</div>
+						<div class="house-5__window2 window2-1">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="house-5__window2 window2-2">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="house-5__top">小西瓜的格子间</div>
+				</div>
+				<div class="house-6">
+					<div class="house-6-shadow"></div>
+				</div>
+				<div class="house-7">
+					<div class="house-7-shadow"></div>
+				</div>
+				<div class="house-8">
+					<div class="house-8__cap"></div>
+					<div class="house-8__window window-1">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="house-8__window window-2">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="house-8-shadow"></div>
+				</div>
+				<div class="house-9">
+					<div class="house-9__door"></div>
+					<div class="house-9__window window-2">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+				</div>
+				<div class="house-10"></div>
+				<div class="house-11">
+					<div class="house-11__bottom">
+						<div class="house-11__window window-1">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="house-11__middle">
+						<div class="house-11__window window-2">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="house-11__top"></div>
+				</div>
+				<div class="house-12">
+					<div class="house-12__bottom">
+						<div class="house-12__window">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="house-12__middle">
+						<div class="house-12__window">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="house-12__top"></div>
+				</div>
+			</div>
+			<!-- 花儿 -->
+			<div class="flower">
+				<div class="flower-top">
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+				<div class="flower-head"></div>
+			</div>
+		</div>
+		<div class="wrapper-car">
+			<div class="road"></div>
+			<div class="car">
+				<div class="car-body">
+					<div class="car-top car-top__1"></div>
+			        <div class="car-top car-top__2"></div>
+		            <div class="car-win car-win__1"></div>
+		            <div class="car-win car-win__2"></div>
+				</div>
+				<div class="car-bottom"></div>
+				<div class="wheel wheel-front"><div class="gap"></div></div>
+		        <div class="wheel wheel-end"><div class="gap"></div></div>
+		        <div class="exhaust"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs/layer/layer.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
